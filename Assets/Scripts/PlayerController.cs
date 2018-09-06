@@ -12,10 +12,22 @@ public class PlayerController : MonoBehaviour {
     private bool playerMoving;
     private Vector2 lastMove;
 
+    private static bool playerExists;
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
+
+        if (!playerExists)
+        {
+            playerExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        } else
+        {
+            Destroy(gameObject);
+        }
+
 	}
 	
 	// Update is called once per frame
@@ -55,4 +67,14 @@ public class PlayerController : MonoBehaviour {
         anim.SetFloat("LastMoveX", lastMove.x);
         anim.SetFloat("LastMoveY", lastMove.y);
 	}
+
+    public Vector2 GetLastMove()
+    {
+        return lastMove;
+    }
+
+    public void SetLastMove(Vector2 newLastMove)
+    {
+        lastMove = newLastMove;
+    }
 }
