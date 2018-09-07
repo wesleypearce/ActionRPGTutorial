@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SlimeController : MonoBehaviour {
 
     public float moveSpeed;
+    public int enemyDamage;
 
     private Rigidbody2D myRigidbody;
+
+    private GameObject thePlayer;
 
     private bool moving;
 
@@ -17,6 +21,9 @@ public class SlimeController : MonoBehaviour {
     private float timeToMoveCounter;
 
     private Vector3 moveDirection;
+
+    public float waitToReload;
+    private bool reloading;
 
 	// Use this for initialization
 	void Start () {
@@ -51,6 +58,16 @@ public class SlimeController : MonoBehaviour {
                 timeToMoveCounter = Random.Range(timeToMove * .75f, timeToMove * 1.25f);
 
                 moveDirection = new Vector3(Random.Range(-1f, 1f) * moveSpeed, Random.Range(-1f, 1f) * moveSpeed, 0f);
+            }
+        }
+
+        if (reloading)
+        {
+            waitToReload -= Time.deltaTime;
+            if(waitToReload < 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                thePlayer.SetActive(true);
             }
         }
 	}
