@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 50967606600029992}
   - component: {fileID: 114613926514118976}
   - component: {fileID: 114279040905267370}
+  - component: {fileID: 114315843388951610}
   m_Layer: 0
   m_Name: RedSlime
   m_TagString: Enemy
@@ -110,6 +111,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 10
+--- !u!114 &114315843388951610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962649478432026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c507592edcd764147aae37713f014689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 15
+  currentHealth: 0
 --- !u!114 &114613926514118976
 MonoBehaviour:
   m_ObjectHideFlags: 1

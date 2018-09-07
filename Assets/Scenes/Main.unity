@@ -719,6 +719,53 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.04}
   m_EdgeRadius: 0
+--- !u!1001 &491069574
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4664203793555516, guid: a2f0551b4bafdcf47a9eb6f790df80e2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 39.038128
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664203793555516, guid: a2f0551b4bafdcf47a9eb6f790df80e2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -40.496403
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664203793555516, guid: a2f0551b4bafdcf47a9eb6f790df80e2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664203793555516, guid: a2f0551b4bafdcf47a9eb6f790df80e2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664203793555516, guid: a2f0551b4bafdcf47a9eb6f790df80e2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664203793555516, guid: a2f0551b4bafdcf47a9eb6f790df80e2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664203793555516, guid: a2f0551b4bafdcf47a9eb6f790df80e2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664203793555516, guid: a2f0551b4bafdcf47a9eb6f790df80e2, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2f0551b4bafdcf47a9eb6f790df80e2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &548628463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1313693797908292, guid: a2f0551b4bafdcf47a9eb6f790df80e2,
+    type: 2}
+  m_PrefabInternal: {fileID: 491069574}
 --- !u!1 &663933376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,6 +2095,15 @@ Prefab:
     - target: {fileID: 4777781361058772, guid: c9fddff952b1bf144b5ac596de3deb2c, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293120394826018, guid: c9fddff952b1bf144b5ac596de3deb2c,
+        type: 2}
+      propertyPath: damageBurst
+      value: 
+      objectReference: {fileID: 548628463}
+    - target: {fileID: 1962076498806138, guid: c9fddff952b1bf144b5ac596de3deb2c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9fddff952b1bf144b5ac596de3deb2c, type: 2}
